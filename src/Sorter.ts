@@ -5,12 +5,12 @@ export interface Sortable {
     swap(leftIndex: number, rightIndex: number): void;
 }
 
-export abstract class Sorter{
-   
-    public abstract swap:any;
-    public  abstract length:number;
-    public abstract  compare:any;
+export abstract class Sorter {
 
+    abstract length: number;
+    abstract swap(leftIndex: number, rightIndex: number):void;
+    abstract compare(leftIndex: number, rightIndex: number):boolean;
+    
     sort(): void {
         //tu dlugosc destrukturyzajca to jest bubble sort 
         //jedziemy od lewej do prawej sprawdzamy czy element po lewej jest wiekszy
@@ -21,7 +21,6 @@ export abstract class Sorter{
         //A to type guard dla obietktu  this.some instanceof Array
         // If collection is array of numbers (to jest type Guard bo jest instanceof jak sa typy proste to typeof sie daje)
         const { length } = this;
-
         for (let i = 0; i < length; i++) {
             for (let j = 0; j < length - i - 1; j++) {
                 if (this.compare(j, j + 1)) {

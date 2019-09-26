@@ -1,17 +1,20 @@
-import { Sortable } from "./sorter";
+import { Sortable, Sorter } from "./sorter";
 
-class Node {
+class Node  {
 
     next: Node | null = null;
     constructor(public data: number) {
-
+        
     }
 }
 
-export class LinkedList implements Sortable {
+export class LinkedList extends Sorter implements Sortable  {
 
     head: Node | null = null;
 
+    constructor(){
+        super();
+    }
     add(data: number): void {
         const node = new Node(data);
         if (!this.head) {
