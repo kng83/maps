@@ -5,3 +5,5 @@
 //tsc --init (initializacja tsc)
 //fajny concurently inaczej niz ja kiedys pisalem
 //npm install @types/node
+//composition vs inheritance 
+//book design Patterns Elements of reusable Object-Oriented Software Erich Gamma Richard Helm
