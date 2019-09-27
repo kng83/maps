@@ -1,20 +1,30 @@
-import {Sorter} from './Sorter';
-import {NumbersCollection} from './NumbersCollection';
-import {CharacterCollection} from './CharacterCollection';
-import { LinkedList } from './LinkedList';
+import fs from 'fs';
 
-const numbersCollection = new NumbersCollection([10,3,-5,10]);
-numbersCollection.sort();
-console.log(numbersCollection.data);
 
-const characterCollection = new CharacterCollection('kot i pies');
-characterCollection.sort();
-console.log(characterCollection.data);
+const matches = fs.readFileSync('./football.csv', {
+    encoding: 'utf-8'
+})
+    .split('\n')
+    .map((row: string): string[] => {
+        return row.split(',');
+});
 
-const linkedList = new LinkedList();
-linkedList.add(4);
-linkedList.add(-10);
-linkedList.add(2);
-linkedList.add(-100);
-linkedList.sort();
-linkedList.print();
+enum MatchResult  {
+HomeWin='H',
+AwayWin='A',
+Draw = 'D'
+}
+
+
+let manUnitedWins = 0;
+for (let match of matches) {
+    if (match[1] === 'Man United' && match[5] === MatchResult.HomeWin) {
+        manUnitedWins++;
+    }
+    else if (match[2] === 'Man United' && match[5] === MatchResult.AwayWin) {
+        manUnitedWins++;
+    }
+
+} 
+
+console.log(`Man United won ${manUnitedWins} games`);

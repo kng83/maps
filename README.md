@@ -4,3 +4,4 @@
 //ctrl+shift+p i mamy menu w vscode i dajemy fold level 2 wtedy widzimy tylko nazwy np klas
 //tsc --init (initializacja tsc)
 //fajny concurently inaczej niz ja kiedys pisalem
+//npm install @types/node
