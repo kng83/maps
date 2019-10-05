@@ -4,8 +4,12 @@
 /dist
 /tmp
 /out-tsc
+<<<<<<< HEAD
 /build
 
+=======
+/.cache
+>>>>>>> baaee03603bda682a4028e3376d12b10586d33e8
 # dependencies
 /node_modules
 
