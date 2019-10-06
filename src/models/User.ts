@@ -1,4 +1,6 @@
 import {Eventing} from './Eventing';
+import {Sync} from './Sync';
+import {Attributes} from './Attributes';
 
 export interface UserProps {
     id?:number;
@@ -6,19 +8,29 @@ export interface UserProps {
     age?: number;
 }
 
+const rootUrl = 'http://localhost:3000/users';
 export class User {
 
     public events:Eventing = new Eventing();
-    constructor(private data: UserProps) { }
+    public sync: Sync<UserProps> = new Sync<UserProps>(rootUrl);
+    public attributes:Attributes<UserProps>;
 
-    // get property by name
-    get(propName: string): (number | string) {
-        return this.data[propName];
+    constructor(attrs:UserProps){
+        this.attributes = new Attributes<UserProps>(attrs);
     }
 
-    // set new property value
-    set(update: UserProps): void {
-        Object.assign(this.data, update);
+    // to jest super bo jest tylko referencja i nie mamy balaganu !!!!!
+    get on(){
+        return this.events.on;
     }
 
+    get trigger(){
+        return this.events.trigger;
+    }
+
+    get get(){
+        return this.attributes.get;
+    }
+
+    
 }
