@@ -1,9 +1,11 @@
-import { User } from './User';
-import { Company } from './Company';
-import {CustomMap} from './CustomMap';
+import express from 'express';
+import { Response, Request } from 'express';
+import {router} from './routes/loginRoutes';
+import bodyParser from 'body-parser';
 
-const user = new User();
-const company = new Company();
-const customMap = new CustomMap('map');
-customMap.addMarker(user);
-customMap.addMarker(company);
+const app = express();
+
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(router);
+
+app.listen(3000,()=>console.log(`listen on port ${3000}`));
