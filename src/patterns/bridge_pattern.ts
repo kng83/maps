@@ -4,6 +4,7 @@ interface UIToolkit {
     drawText(text: string): void;
 }
 
+//** Wymuszanie by klasa interfejsowa przyjmowala interfejs UIToolKit i metode dostepowo do niego render */
 abstract class UIElement {
     constructor(public toolkit: UIToolkit) { }
     abstract render(): void;
@@ -27,3 +28,9 @@ class ImageElement extends UIElement {
         this.toolkit.drawImage(this.src);
     }
 }
+
+let toolkit: UIToolkit;
+let imageElement = new ImageElement('foo.jpg', toolkit);
+let textElement = new TextElement('bar', toolkit);
+imageElement.render();
+textElement.render();
