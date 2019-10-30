@@ -1,12 +1,13 @@
 interface Storage1 {
     get<T>(key: string): Promise<T>;
     set<T>(key: string, value: T): Promise<void>;
+    
   }
   
   class IndexedDBStorage implements Storage1 {
     constructor(public db: IDBDatabase, public storeName = "default") {}
     open(name: string): Promise<IndexedDBStorage> {
-      return new Promise<IndexedDBStorage>((resolve, reject) => {
+      return new Promise<IndexedDBStorage>((resolve: any, reject:any) => {
         let request = indexedDB.open(name);
   
         request.onsuccess = event => {
@@ -19,8 +20,9 @@ interface Storage1 {
         };
       });
     }
+
     get<T>(key: string):Promise<T> {
-      return new Promise<T>((resolve, reject) => {
+      return new Promise((resolve:any, reject:any) => {
         let transaction = this.db.transaction(this.storeName);
         let store = transaction.objectStore(this.storeName);
         let request = store.get(key);

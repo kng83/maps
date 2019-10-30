@@ -4,7 +4,7 @@ abstract class UIComponent {
     }
     
     class Text1 {
-      content: string;
+      content: string='';
       setColor(color: string): void { }
       setFont(font: string): void { }
       draw(): void { }
@@ -23,7 +23,7 @@ abstract class UIComponent {
     }
     
     class TextComponent extends UIComponent {
-      texts: Text1[];
+      texts: Text1[] = [];
       draw(): void {
         for (let text of this.texts) {
         text.draw();
