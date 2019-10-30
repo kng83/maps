@@ -1,3 +1,5 @@
+
+
 interface UIToolkit {
     drawBorder(): void;
     drawImage(src: string): void;
@@ -5,12 +7,12 @@ interface UIToolkit {
 }
 
 //** Wymuszanie by klasa interfejsowa przyjmowala interfejs UIToolKit i metode dostepowo do niego render */
-abstract class UIElement {
+abstract class BasicRender {
     constructor(public toolkit: UIToolkit) { }
     abstract render(): void;
 }
 
-class TextElement extends UIElement {
+class TextElement extends BasicRender {
     constructor(public text: string, toolkit: UIToolkit) {
         super(toolkit);
     }
@@ -20,7 +22,7 @@ class TextElement extends UIElement {
     }
 }
 
-class ImageElement extends UIElement {
+class ImageElement extends BasicRender {
     constructor(public src: string, toolkit: UIToolkit) {
         super(toolkit);
     }
@@ -29,8 +31,24 @@ class ImageElement extends UIElement {
     }
 }
 
-let toolkit: UIToolkit;
+
+class Gui implements UIToolkit{
+    drawBorder(): void {
+        console.log("DrawBorder not Implemented");
+    }    
+    drawImage(src: string): void {
+       console.log("Draw image Method not implemented.");
+    }
+    drawText(text: string): void {
+        console.log("Draw TextMethod not implemented.");
+    }
+    some = 4;
+}
+
+
+let toolkit: UIToolkit = new Gui();
+
 let imageElement = new ImageElement('foo.jpg', toolkit);
-let textElement = new TextElement('bar', toolkit);
 imageElement.render();
+let textElement = new TextElement('bar', toolkit);
 textElement.render();

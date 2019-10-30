@@ -1,3 +1,2 @@
 //import './decorators/decorators';
-import './metadata/metadata2';
-
+import './patterns/bridge_pattern';
