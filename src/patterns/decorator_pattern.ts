@@ -3,7 +3,7 @@ abstract class UIComponent {
     abstract draw(): void;
     }
     
-    class Text1 {
+    class BasicText {
       content: string='';
       setColor(color: string): void { }
       setFont(font: string): void { }
@@ -14,7 +14,7 @@ abstract class UIComponent {
       constructor(public component: TextComponent) {
         super();
     }
-      get texts(): Text1[] {
+      get texts(): BasicText[] {
         return this.component.texts;
     }
       draw(): void {
@@ -23,7 +23,7 @@ abstract class UIComponent {
     }
     
     class TextComponent extends UIComponent {
-      texts: Text1[] = [];
+      texts: BasicText[] = [];
       draw(): void {
         for (let text of this.texts) {
         text.draw();
@@ -45,7 +45,7 @@ abstract class UIComponent {
     
     let decoratedComponent = new ColorDecorator( new TextComponent(),'black');
     console.log(decoratedComponent.color);
-    let txt = new Text1();
+    let txt = new BasicText();
     txt.content = 'jakis cyrk'
     decoratedComponent.component.texts = [txt];
     decoratedComponent.draw();
