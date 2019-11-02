@@ -54,6 +54,6 @@ namespace ChainResponsiblePattern {
 
     let req: Request = { type: 'help' };
     const secondHandler = new SecondHandler();
-    let feed = secondHandler.handle(req);
+    secondHandler.handle(req);
 
 }

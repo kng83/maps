@@ -1,5 +1,13 @@
-//import './decorators/decorators';
-//import './patterns/bridge_pattern';
-//import './patterns/factory_pattern';
-// import './patterns/builder_pattern';
-import './patterns/behavioral_patterns/chain_responsible_pattern';
+
+
+import Jquery from 'jQuery';
+
+ 
+   let some = Jquery("#par1");
+   console.log(some);
+
+
+console.log(document.getElementsByClassName("bobo"))
+import {StatePattern} from './patterns/behavioral_patterns/state_pattern';
+
+let state = StatePattern;
