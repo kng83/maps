@@ -34,22 +34,17 @@ export namespace StatePattern {
             // Do nothing.
         }
     }
-    class Context {
-     //   element!: JQuery;
-        private stateEnabled:StateEnabled;
-        private stateDisabled:StateDisabled ;
-        state:State = this.stateDisabled;
+    class Context{
+        private stateEnabled:StateEnabled = new StateEnabled(this);
+        private stateDisabled:StateDisabled = new StateDisabled(this);;
+        state!:State;
 
         constructor(public element:JQuery) {
-            this.stateDisabled = new StateDisabled(this);
-            this.stateEnabled = new StateEnabled(this)
             this.element.hover(() => this.render(true),() => this.render(false)).click(() => this.click());
-            console.log('some is defined',element);
             this.render(false);
         }
 
         private render(hover: boolean): void {
-            console.log('herer is render',hover);
             this.state  = hover ? this.stateEnabled : this.stateDisabled;
             this.state.render(hover);
         }
@@ -63,11 +58,8 @@ export namespace StatePattern {
 
     }
 
-    let element = document.getElementsByClassName("bobo") as HTMLCollection;
-    setTimeout(()=>{
-        console.log(element[0])
-        let context = new Context(JQuery(element[0] as HTMLElement));
-    },200)
-    
+    let element = document.getElementById("par1") as HTMLElement;
+    let context = new Context(JQuery(element));
+
 
 }

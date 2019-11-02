@@ -2,8 +2,16 @@
     background: red;
 }
 .disabled{
-    background: black;
+    display: block;
+    background: purple;
+    transition: 800ms;
+    height: 100px;
+    width: 100px;
 }
 .hover{
+    display: block;
     background: yellow;
+    transition: 800ms;
+    height: 400px;
+    width:400px;
 }
