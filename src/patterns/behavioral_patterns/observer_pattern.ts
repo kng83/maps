@@ -11,7 +11,16 @@ namespace ObserverPattern {
         }
         on(state: string, listener: Observer): this;
         on(states: string[], listener: Observer): this;
-        on(states: string | string[], listener: Observer): this { }
+        on(states: string | string[], listener: Observer): this {
+            if (typeof states === 'string') {
+                super.on(states, listener);
+            } else {
+                for (let state of states) {
+                    super.on(state, listener);
+                }
+            }
+            return this;
+        }
 
 
         private _get(identifiers: string[]): any {
@@ -41,4 +50,15 @@ namespace ObserverPattern {
         }
 
     }
+
+    let stateManager = new StateManager({
+        connected: false,
+        loaded: false,
+        foo: 'abc',
+        bar: 123
+    });
+    stateManager.on(['connected', 'loaded'], () => {
+        let disabled = !stateManager.connected && !stateManager.loaded;
+        button.disabled = disabled;
+    });
 }
