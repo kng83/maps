@@ -137,13 +137,13 @@
         "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
-      "./src/patterns/behavioral_patterns/observer_pattern_3.ts": {
-        "version": "27bf1da29d09fe8a0451161b601d5f50c24643dbcb4d0a216f075e165a2b866b",
-        "signature": "f5f0697de45d1c81dc2fc615ac4618a6dd5cd3a59ad86ccd41e907fb5ab4aebc"
+      "./src/patterns/behavioral_patterns/visitor_pattern.ts": {
+        "version": "dbba169132991d3a9b8c5585bbcbd5aef946905a2afa7b34ef5fd9dd071a4b18",
+        "signature": "fc5d7c26b9cb059182c6a0ae3aa03824d055c173f21cb80dd584acb042c8667e"
       },
       "./src/index.ts": {
-        "version": "0442d9be2055a55386698ef50a9896114e33f51f562d1a535b1227bf3a7574b9",
-        "signature": "91f68cfdb5ef67ad7e5a4e3e64ee2e1cf713dc972a5476de9afdeba64edbfc3f"
+        "version": "2893166fd0b5bed26f01d29785da9a20349159048783196d8b246458f79d96c6",
+        "signature": "87aa860f63cb28d96e1b0a5e85949c62754b92de7eccf51c8bd62616ceeb3e3d"
       },
       "./src/decorators/decorators.ts": {
         "version": "6e96dc3e76d86a09f1fc94b3510aa9a338582af7c14f42026b0ed67557e9f2fa",
@@ -196,6 +196,10 @@
       "./src/patterns/behavioral_patterns/observer_pattern_2.ts": {
         "version": "15f84ff34ea1c3dd3a7dbfcdd943e1fd02358a83d80363ae4df496e55b637707",
         "signature": "829a21ae7887959976fd20bbdfbdefcdc07d38e55e09a6142cc1a6d3193c907e"
+      },
+      "./src/patterns/behavioral_patterns/observer_pattern_3.ts": {
+        "version": "27bf1da29d09fe8a0451161b601d5f50c24643dbcb4d0a216f075e165a2b866b",
+        "signature": "f5f0697de45d1c81dc2fc615ac4618a6dd5cd3a59ad86ccd41e907fb5ab4aebc"
       },
       "./node_modules/@types/jquery/jquerystatic.d.ts": {
         "version": "84c8e0dfd0d885abd37c1d213ef0b949dd8ef795291e7e7b1baadbbe4bc0f8a9",
@@ -711,7 +715,7 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/patterns/behavioral_patterns/observer_pattern_3.ts": [
+      "./src/patterns/behavioral_patterns/visitor_pattern.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -800,6 +804,12 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/patterns/behavioral_patterns/observer_pattern_2.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/patterns/behavioral_patterns/observer_pattern_3.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -2065,6 +2075,7 @@
       "./src/patterns/behavioral_patterns/memento_pattern_2.ts",
       "./src/patterns/behavioral_patterns/observer_pattern.ts",
       "./src/patterns/behavioral_patterns/observer_pattern_2.ts",
+      "./src/patterns/behavioral_patterns/observer_pattern_3.ts",
       "./node_modules/@types/jquery/jquerystatic.d.ts",
       "./node_modules/@types/jquery/jquery.d.ts",
       "./node_modules/@types/jquery/misc.d.ts",
@@ -2137,7 +2148,7 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      "./src/patterns/behavioral_patterns/observer_pattern_3.ts"
+      "./src/patterns/behavioral_patterns/visitor_pattern.ts"
     ]
   },
   "version": "3.6.3"
