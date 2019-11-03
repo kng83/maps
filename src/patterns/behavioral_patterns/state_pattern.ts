@@ -36,7 +36,7 @@ export namespace StatePattern {
     }
     class Context{
         private stateEnabled:StateEnabled = new StateEnabled(this);
-        private stateDisabled:StateDisabled = new StateDisabled(this);;
+        private stateDisabled:StateDisabled = new StateDisabled(this);
         state!:State;
 
         constructor(public element:JQuery) {

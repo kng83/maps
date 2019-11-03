@@ -51,14 +51,14 @@ namespace ObserverPattern {
 
     }
 
+
     let stateManager = new StateManager({
         connected: false,
         loaded: false,
         foo: 'abc',
         bar: 123
     });
-    stateManager.on(['connected', 'loaded'], () => {
-        let disabled = !stateManager.connected && !stateManager.loaded;
-        button.disabled = disabled;
-    });
+
+    stateManager.emit('oko',10);
+    console.log(stateManager);
 }
