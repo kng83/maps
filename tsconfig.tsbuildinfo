@@ -138,8 +138,8 @@
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
       "./src/patterns/behavioral_patterns/observer_pattern_4.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "version": "12c3b739b5c4a0f62e01faa95ddf7bfb91e93feffb99b1e3f41ad9a1bfcc45a3",
+        "signature": "28c6e5dceed0408a5ae66918b76953ed93b08a14eaf40ab9ca37a82cf4c62b32"
       },
       "./src/index.ts": {
         "version": "5eaa256e3e018f4d3a414b9a79ff57dd49b614dff72512f56094749ec7b9b1c5",
@@ -2071,7 +2071,7 @@
       "./node_modules/typescript/lib/lib.es2019.symbol.d.ts",
       "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "./node_modules/typescript/lib/lib.esnext.bigint.d.ts",
-      "./src/patterns/behavioral_patterns/observer_pattern_4.ts",
+      "./src/index.ts",
       "./src/decorators/decorators.ts",
       "./node_modules/reflect-metadata/index.d.ts",
       "./src/metadata/metadata.ts",
@@ -2159,7 +2159,7 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      "./src/index.ts"
+      "./src/patterns/behavioral_patterns/observer_pattern_4.ts"
     ]
   },
   "version": "3.6.3"
