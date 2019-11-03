@@ -137,13 +137,13 @@
         "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
-      "./src/patterns/behavioral_patterns/visitor_pattern.ts": {
-        "version": "dbba169132991d3a9b8c5585bbcbd5aef946905a2afa7b34ef5fd9dd071a4b18",
-        "signature": "fc5d7c26b9cb059182c6a0ae3aa03824d055c173f21cb80dd584acb042c8667e"
+      "./src/patterns/behavioral_patterns/observer_pattern_4.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       "./src/index.ts": {
-        "version": "2893166fd0b5bed26f01d29785da9a20349159048783196d8b246458f79d96c6",
-        "signature": "87aa860f63cb28d96e1b0a5e85949c62754b92de7eccf51c8bd62616ceeb3e3d"
+        "version": "5eaa256e3e018f4d3a414b9a79ff57dd49b614dff72512f56094749ec7b9b1c5",
+        "signature": "d962fc01a493ad60d549fcc57fc14ed716fe0292a821184cef9a6b3a73b709b8"
       },
       "./src/decorators/decorators.ts": {
         "version": "6e96dc3e76d86a09f1fc94b3510aa9a338582af7c14f42026b0ed67557e9f2fa",
@@ -433,6 +433,10 @@
         "version": "73219274d9f64305becf0ed27695a122344be477c8451730a4ed62f350e4be17",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
+      "./src/patterns/behavioral_patterns/visitor_pattern.ts": {
+        "version": "b5eab2b043bd55e3067ca9da0f29a4b7ef6b704e6d03e9bdc5b057f7944d67fa",
+        "signature": "fc5d7c26b9cb059182c6a0ae3aa03824d055c173f21cb80dd584acb042c8667e"
+      },
       "./src/patterns/creation_patterns/abstract_factory_pattern.ts": {
         "version": "9990aaaf23054d9bda619b62fa3ca7fb44b0a518e30cc1e930665486f7eb69ab",
         "signature": "efc72412420174db52c7d2c9f64444536ead0049e0899be237930478387173ee"
@@ -715,7 +719,7 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/patterns/behavioral_patterns/visitor_pattern.ts": [
+      "./src/patterns/behavioral_patterns/observer_pattern_4.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -1267,6 +1271,12 @@
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/request/index.d.ts",
         "./node_modules/@types/node/path.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/patterns/behavioral_patterns/visitor_pattern.ts": [
+        "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
@@ -2061,7 +2071,7 @@
       "./node_modules/typescript/lib/lib.es2019.symbol.d.ts",
       "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "./node_modules/typescript/lib/lib.esnext.bigint.d.ts",
-      "./src/index.ts",
+      "./src/patterns/behavioral_patterns/observer_pattern_4.ts",
       "./src/decorators/decorators.ts",
       "./node_modules/reflect-metadata/index.d.ts",
       "./src/metadata/metadata.ts",
@@ -2134,6 +2144,7 @@
       "./node_modules/@types/tough-cookie/index.d.ts",
       "./node_modules/@types/request/index.d.ts",
       "./src/patterns/behavioral_patterns/template_pattern.ts",
+      "./src/patterns/behavioral_patterns/visitor_pattern.ts",
       "./src/patterns/creation_patterns/abstract_factory_pattern.ts",
       "./src/patterns/creation_patterns/builder_pattern.ts",
       "./src/patterns/creation_patterns/factory_pattern.ts",
@@ -2148,7 +2159,7 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      "./src/patterns/behavioral_patterns/visitor_pattern.ts"
+      "./src/index.ts"
     ]
   },
   "version": "3.6.3"

@@ -101,6 +101,6 @@ namespace VisitorPattern {
         node.appendTo(htmlVisitor);
         node.appendTo(markdownVisitor);
     }
-    console.log(htmlVisitor.output);
+    console.log(htmlVisitor.output,'htmlVisitor.output');
     console.log(markdownVisitor.output);
 }
