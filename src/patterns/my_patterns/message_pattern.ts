@@ -7,6 +7,9 @@ interface Payload<T>{
     workKey: keyof T;
     content: any;
 }
+
+
+
 class MessageBasic{
        
 }
@@ -38,7 +41,7 @@ class User extends Message{
 
 let testMessage = new User();
 let testMessage2 = new User();
-    testMessage.sendMessageTo(testMessage2,{workKey:"some",content:"other things"})
+    testMessage.sendMessageTo(testMessage2,{workKey:"",content:"other things"})
         .takeResponse((done,err,content)=>{
             console.log(content);
         })
