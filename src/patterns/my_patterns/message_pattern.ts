@@ -1,33 +1,48 @@
 
 
+namespace MessagePattern{
+
+
+interface Payload<T>{
+    workKey: keyof T;
+    content: any;
+}
 class MessageBasic{
-        protected resolvePayload(payload:any){
-            return payload;
-        }
+       
 }
 
-class Message extends MessageBasic{
-    instanceField:any;
-    answerField:any;
-    sendMessageTo<T>(instance:T){
-        this.instanceField = instance;
-        this.answerField = null;
+abstract class Message extends MessageBasic{
+    abstract  resolvePayload<T extends Message>(payload:Payload<T>):any;
+    private processField:any;
+    private answerField:any;
+
+    sendMessageTo<C extends Message>(instance:C ,payload: Payload<C>):Pick<Message,"takeResponse">{
+        this.processField = instance.resolvePayload(payload);    
         return this;
     } 
-    withKeyAndContent(payload:{key:string, content:any}){
-        this.answerField = this.instanceField.resolvePayload(payload);
-        return this;
-    }
-    takeResponse(fn:{(done:boolean, err?:boolean,content?:any):void}){
-        if(this.answerField){
-            return fn(true,false, this.answerField)
+    
+    takeResponse<T>(fn:{(done:boolean, err?:boolean,content?:T):void}){
+        if(this.processField){
+            return fn(true,false, this.processField);
         }
         return fn(false,true, undefined);
     }
 }
-let testMessage = new Message();
-let testMessage2 = new Message();
-testMessage
-    .sendMessageTo(testMessage2)
-    .withKeyAndContent({key:'makeSome',content:'Jestem robo'})
-    .takeResponse(console.log);
+
+class User extends Message{
+    some:any;
+    resolvePayload(payload:any){
+        return payload;
+    }
+}
+
+let testMessage = new User();
+let testMessage2 = new User();
+    testMessage.sendMessageTo(testMessage2,{workKey:"some",content:"other things"})
+        .takeResponse((done,err,content)=>{
+            console.log(content);
+        })
+
+
+    
+    }
