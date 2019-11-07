@@ -137,13 +137,13 @@
         "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
-      "./src/patterns/my_patterns/message_pattern.ts": {
-        "version": "772616d72fd1474ae61861c926191bb1479228b339170e0e3e3c14ec3be06ee1",
-        "signature": "0e3759bc92af615f6db431d1cd24df537201f995dc39fe0d96ccd9b7f24082e4"
+      "./src/misc/generators/generator_2.ts": {
+        "version": "9804cf114a1b901f66681e20dcb94a33fa0bcec787e6a76f3fc74d200c35008d",
+        "signature": "cae320daba9ce0096abfe9cf0a240448adf42191e9a0210356ce49499e748e39"
       },
       "./src/index.ts": {
-        "version": "261d378b4643bb60479530e50b359e54e7b4adead722e79a329f40dbb6c386ba",
-        "signature": "8eae535263001d9a00ae701c0b33eb2b1402ce46a5be1d64ea64f6451870acd8"
+        "version": "e6cef5f1704795bf3a317e757d1c505dadc67e3b3f6f311c3d6915f61481eab4",
+        "signature": "b0372a406578f5678360bc6f37bf1a518e7bd0099563c2b7c08d682d31039da4"
       },
       "./src/decorators/decorators.ts": {
         "version": "6e96dc3e76d86a09f1fc94b3510aa9a338582af7c14f42026b0ed67557e9f2fa",
@@ -165,6 +165,10 @@
         "version": "cbf64dc98afb3698b2d6024828a6c0ee976add553b642f5b683466acd048be2b",
         "signature": "b423af693bb9d691eaf2bd054533cd27feb63d927d08b941b490f49a1860d894"
       },
+      "./src/misc/generators/generator_1.ts": {
+        "version": "dd5dc2372af03c6cf3a16fea9bb9ce66f630f03fc0bd786510b7059975310601",
+        "signature": "2765c5a8a867da5698f2a1ddeced4571bb630d36496e5cf2fa417c89d6ec20cf"
+      },
       "./src/patterns/behavioral_patterns/chain_responsible_pattern.ts": {
         "version": "67ddfc9d28ac124cb430c2526a7bacea6438b10181b2bcc15d40e8fee334f5e8",
         "signature": "65c73c84f8f67b1a130f5096504b00ae1ca3a700a8fa112c9c7fe4fca25782f6"
@@ -182,7 +186,7 @@
         "signature": "6f722d0a54b512bc91b1cf1dfafb1c3d5f289d809a91a3d57c173738f0cdf34f"
       },
       "./src/patterns/behavioral_patterns/memento_pattern.ts": {
-        "version": "bdd623ac366f0b2da558206c3d557f58e90134e9f895709c3ab708cdeb02c14b",
+        "version": "e9e38c87fc6a1cc393f8dd093782250d0186761a49efcf1338b268ea81fb932b",
         "signature": "1bf3f07422445b2d05f274860547439b867245863a527130cf5c56dbe012aff9"
       },
       "./src/patterns/behavioral_patterns/memento_pattern_2.ts": {
@@ -434,7 +438,7 @@
         "signature": "5f6ae89a8217fcfc4c313cf99353ab148f0e469026d75cb2319e6b14ee12b63e"
       },
       "./src/patterns/behavioral_patterns/template_pattern.ts": {
-        "version": "73219274d9f64305becf0ed27695a122344be477c8451730a4ed62f350e4be17",
+        "version": "ae7aa22b398fb8518212422e3232cfee0858ce1b70c3fb2282585b1f5cc729dd",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "./src/patterns/behavioral_patterns/visitor_pattern.ts": {
@@ -460,6 +464,10 @@
       "./src/patterns/creation_patterns/singleton_pattern.ts": {
         "version": "5e21a756dd954a0b16a440a4eea091f66001fea9c934d3762ab5556f676ea78e",
         "signature": "21b116edfd1e1b7c0a282f1d3f86a4caa2460dc90d69a7470490fe3419537510"
+      },
+      "./src/patterns/my_patterns/message_pattern.ts": {
+        "version": "02a2e9477691f0fad44679b4ef22c518f573bb1527e865321a4aec8bcd71950f",
+        "signature": "0e3759bc92af615f6db431d1cd24df537201f995dc39fe0d96ccd9b7f24082e4"
       },
       "./src/patterns/structural_patterns/adapter_pattern.ts": {
         "version": "862f4834bab296b19580e24c8283eb23f0308a38face4fd25263e098cae762c5",
@@ -723,7 +731,7 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/patterns/my_patterns/message_pattern.ts": [
+      "./src/misc/generators/generator_2.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -763,6 +771,12 @@
       ],
       "./src/metadata/my_metadata.ts": [
         "./node_modules/reflect-metadata/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/misc/generators/generator_1.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -1316,6 +1330,12 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/patterns/creation_patterns/singleton_pattern.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/patterns/my_patterns/message_pattern.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -2087,6 +2107,7 @@
       "./src/metadata/metadata.ts",
       "./src/metadata/metadata2.ts",
       "./src/metadata/my_metadata.ts",
+      "./src/misc/generators/generator_1.ts",
       "./src/patterns/behavioral_patterns/chain_responsible_pattern.ts",
       "./src/patterns/behavioral_patterns/command_pattern.ts",
       "./src/patterns/behavioral_patterns/iterator_pattern.ts",
@@ -2161,6 +2182,53 @@
       "./src/patterns/creation_patterns/factory_pattern.ts",
       "./src/patterns/creation_patterns/prototype_pattern.ts",
       "./src/patterns/creation_patterns/singleton_pattern.ts",
+      [
+        "./src/patterns/my_patterns/message_pattern.ts",
+        [
+          {
+            "file": "./src/patterns/my_patterns/message_pattern.ts",
+            "start": 979,
+            "length": 7,
+            "code": 2322,
+            "category": 1,
+            "messageText": "Type '\"\"' is not assignable to type '\"some\" | \"takeResponse\" | \"resolvePayload\" | \"sendMessageTo\"'.",
+            "relatedInformation": [
+              {
+                "file": "./src/patterns/my_patterns/message_pattern.ts",
+                "start": 62,
+                "length": 7,
+                "messageText": "The expected type comes from property 'workKey' which is declared here on type 'Payload<User>'",
+                "category": 3,
+                "code": 6500
+              }
+            ]
+          },
+          {
+            "file": "./src/patterns/my_patterns/message_pattern.ts",
+            "start": 1039,
+            "length": 4,
+            "messageText": "Parameter 'done' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./src/patterns/my_patterns/message_pattern.ts",
+            "start": 1044,
+            "length": 3,
+            "messageText": "Parameter 'err' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./src/patterns/my_patterns/message_pattern.ts",
+            "start": 1048,
+            "length": 7,
+            "messageText": "Parameter 'content' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          }
+        ]
+      ],
       "./src/patterns/structural_patterns/adapter_pattern.ts",
       "./src/patterns/structural_patterns/bridge_pattern.ts",
       "./src/patterns/structural_patterns/composite_pattern.ts",
@@ -2170,7 +2238,7 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      "./src/patterns/my_patterns/message_pattern.ts"
+      "./src/misc/generators/generator_2.ts"
     ]
   },
   "version": "3.6.3"

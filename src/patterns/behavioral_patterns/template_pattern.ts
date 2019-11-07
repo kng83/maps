@@ -3,6 +3,10 @@ import  request from 'request';
 import path from 'path';
 
 
+// Bazowa klasa to TextReader z niej sa robione specjalizowane subklasa wykorzystujaca znaki Ascii. Na podstawie tej klasy sa robione
+// klasy do czytania stron internetowych i do czytania plikow. Wszystkie dzieki dziedziczeniu moga korzystac z z funkcji decodeBytesToString
+//i otrzymujemy tekst.
+
 namespace TemplatePattern {
 
 
@@ -12,16 +16,19 @@ namespace TemplatePattern {
     abstract class TextReader {
         async readAllText(): Promise<string> {
             let bytes = await this.readAllBytes();
-            let text = this.decodeBytes(bytes);
+            let text = this.decodeBytesToString
+            (bytes);
             return text;
         }
 
         abstract async readAllBytes(): Promise<Buffer>;
-        abstract decodeBytes(bytes: Buffer): string;
+        abstract decodeBytesToString
+        (bytes: Buffer): string;
     }
 
     abstract class AsciiTextReader extends TextReader {
-        decodeBytes(bytes: Buffer): string {
+        decodeBytesToString
+        (bytes: Buffer): string {
             return bytes.toString('ascii'); //konwersja buffer do string
         }
     }

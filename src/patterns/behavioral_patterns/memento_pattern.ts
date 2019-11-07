@@ -1,7 +1,5 @@
 namespace MementoPattern {
 
-
-
     interface State { }
 
     class Memento {

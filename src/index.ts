@@ -3,4 +3,4 @@
 //import './patterns/behavioral_patterns/observer_pattern_3';
 //import './patterns/behavioral_patterns/visitor_pattern';
 //import './patterns/behavioral_patterns/observer_pattern_4';
-import './patterns/my_patterns/message_pattern';
+import './misc/generators/generator_2';
