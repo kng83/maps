@@ -13,7 +13,7 @@
     "devDependencies": {
         "@types/faker": "^4.1.5",
         "@types/googlemaps": "^3.37.7",
-        "typescript": "^3.6.3"
+        "typescript": "^3.7.2"
     },
     "dependencies": {
         "@types/jquery": "^3.3.31",
