@@ -39,6 +39,7 @@ class User extends Message{
     }
 }
 
+/*
 let testMessage = new User();
 let testMessage2 = new User();
     testMessage.sendMessageTo(testMessage2,{workKey:"",content:"other things"})
@@ -49,3 +50,5 @@ let testMessage2 = new User();
 
     
     }
+*/
+}

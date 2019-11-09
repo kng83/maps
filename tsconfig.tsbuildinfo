@@ -137,13 +137,13 @@
         "version": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8",
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
-      "./src/misc/generators/generator_2.ts": {
-        "version": "1f77570871c043e9d88dfa04189ef7dfe951602d0d02c444ae5cc9cd50c6d5bf",
-        "signature": "cae320daba9ce0096abfe9cf0a240448adf42191e9a0210356ce49499e748e39"
+      "./src/misc/generators/generator_3.ts": {
+        "version": "768a768118798784444ee34166ffc4176d3be5a9f86fc1244dade11f0ca41b83",
+        "signature": "402e6bf0adbdc7f8c2463c4898aa3b4932db563bde4a202bc7c973b33fab482d"
       },
       "./src/index.ts": {
-        "version": "e6cef5f1704795bf3a317e757d1c505dadc67e3b3f6f311c3d6915f61481eab4",
-        "signature": "b0372a406578f5678360bc6f37bf1a518e7bd0099563c2b7c08d682d31039da4"
+        "version": "6ad4d77112ef29938d55791c763ac6dbbbbf504a75da49c4a78d46adbd4bfa03",
+        "signature": "d3dba1a02871085a88630e81f00231712e4b734c5ee430e1c549c3ef95edd58d"
       },
       "./src/decorators/decorators.ts": {
         "version": "6e96dc3e76d86a09f1fc94b3510aa9a338582af7c14f42026b0ed67557e9f2fa",
@@ -168,6 +168,10 @@
       "./src/misc/generators/generator_1.ts": {
         "version": "dd5dc2372af03c6cf3a16fea9bb9ce66f630f03fc0bd786510b7059975310601",
         "signature": "2765c5a8a867da5698f2a1ddeced4571bb630d36496e5cf2fa417c89d6ec20cf"
+      },
+      "./src/misc/generators/generator_2.ts": {
+        "version": "1f77570871c043e9d88dfa04189ef7dfe951602d0d02c444ae5cc9cd50c6d5bf",
+        "signature": "cae320daba9ce0096abfe9cf0a240448adf42191e9a0210356ce49499e748e39"
       },
       "./src/patterns/behavioral_patterns/chain_responsible_pattern.ts": {
         "version": "67ddfc9d28ac124cb430c2526a7bacea6438b10181b2bcc15d40e8fee334f5e8",
@@ -466,7 +470,7 @@
         "signature": "21b116edfd1e1b7c0a282f1d3f86a4caa2460dc90d69a7470490fe3419537510"
       },
       "./src/patterns/my_patterns/message_pattern.ts": {
-        "version": "02a2e9477691f0fad44679b4ef22c518f573bb1527e865321a4aec8bcd71950f",
+        "version": "14f0c0312d744eddd5e3f5f201e5fd77386f2cdcb415adba707a90ffa5812bf4",
         "signature": "0e3759bc92af615f6db431d1cd24df537201f995dc39fe0d96ccd9b7f24082e4"
       },
       "./src/patterns/structural_patterns/adapter_pattern.ts": {
@@ -731,7 +735,7 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/misc/generators/generator_2.ts": [
+      "./src/misc/generators/generator_3.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -777,6 +781,12 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/misc/generators/generator_1.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/misc/generators/generator_2.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -2108,6 +2118,7 @@
       "./src/metadata/metadata2.ts",
       "./src/metadata/my_metadata.ts",
       "./src/misc/generators/generator_1.ts",
+      "./src/misc/generators/generator_2.ts",
       "./src/patterns/behavioral_patterns/chain_responsible_pattern.ts",
       "./src/patterns/behavioral_patterns/command_pattern.ts",
       "./src/patterns/behavioral_patterns/iterator_pattern.ts",
@@ -2182,53 +2193,7 @@
       "./src/patterns/creation_patterns/factory_pattern.ts",
       "./src/patterns/creation_patterns/prototype_pattern.ts",
       "./src/patterns/creation_patterns/singleton_pattern.ts",
-      [
-        "./src/patterns/my_patterns/message_pattern.ts",
-        [
-          {
-            "file": "./src/patterns/my_patterns/message_pattern.ts",
-            "start": 979,
-            "length": 7,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type '\"\"' is not assignable to type '\"some\" | \"takeResponse\" | \"resolvePayload\" | \"sendMessageTo\"'.",
-            "relatedInformation": [
-              {
-                "file": "./src/patterns/my_patterns/message_pattern.ts",
-                "start": 62,
-                "length": 7,
-                "messageText": "The expected type comes from property 'workKey' which is declared here on type 'Payload<User>'",
-                "category": 3,
-                "code": 6500
-              }
-            ]
-          },
-          {
-            "file": "./src/patterns/my_patterns/message_pattern.ts",
-            "start": 1039,
-            "length": 4,
-            "messageText": "Parameter 'done' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/patterns/my_patterns/message_pattern.ts",
-            "start": 1044,
-            "length": 3,
-            "messageText": "Parameter 'err' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/patterns/my_patterns/message_pattern.ts",
-            "start": 1048,
-            "length": 7,
-            "messageText": "Parameter 'content' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          }
-        ]
-      ],
+      "./src/patterns/my_patterns/message_pattern.ts",
       "./src/patterns/structural_patterns/adapter_pattern.ts",
       "./src/patterns/structural_patterns/bridge_pattern.ts",
       "./src/patterns/structural_patterns/composite_pattern.ts",
@@ -2238,7 +2203,7 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      "./src/misc/generators/generator_2.ts"
+      "./src/misc/generators/generator_3.ts"
     ]
   },
   "version": "3.6.3"
