@@ -14,6 +14,22 @@ namespace Es2019{
   let x = foo ?? bar(); // if foo==undefined or null then  bar() else foo
 
   console.log(x);
+  //--------------------------assertion
+  
+  function yell(str:any) {
+    assert(typeof str === "string","to nie jest string");
 
-  //--------------------------assertion 
+    return (str as any).caseSelect();
+    //         ~~~~~~~~~~~
+    // error: Property 'toUppercase' does not exist on type 'string'.
+    //        Did you mean 'toUpperCase'?
+}
+
+function assert(condition: any, msg?: string): asserts condition {
+    if (!condition) {
+        throw new Error(msg)
+    }
+}
+
+  yell(23);
 }
