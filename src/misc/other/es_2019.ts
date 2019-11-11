@@ -17,19 +17,37 @@ namespace Es2019{
   //--------------------------assertion
   
   function yell(str:any) {
-    assert(typeof str === "string","to nie jest string");
-
+    assert(typeof str === "string","Error:to nie jest string");
     return (str as any).caseSelect();
-    //         ~~~~~~~~~~~
-    // error: Property 'toUppercase' does not exist on type 'string'.
-    //        Did you mean 'toUpperCase'?
 }
 
 function assert(condition: any, msg?: string): asserts condition {
     if (!condition) {
-        throw new Error(msg)
+        throw new Error(msg);
+    }
+}
+  try{
+    let some = yell(23);
+  } catch(e){
+    console.log(e.message);
+
+  }
+
+  console.log("------------------------------------------");
+  console.log("sprawdzenie assercji do string");
+  function assertIsString(val: any): asserts val is string {
+    if (typeof val !== "string") {
+        throw new Error("Not a string!");
     }
 }
 
-  yell(23);
+  try {
+    let me = assertIsString(40);
+
+  }catch (e){
+    console.log(e.message);
+  }
+
+
+  
 }
