@@ -3,4 +3,4 @@
 //import './patterns/behavioral_patterns/observer_pattern_3';
 //import './patterns/behavioral_patterns/visitor_pattern';
 //import './patterns/behavioral_patterns/observer_pattern_4';
-import './misc/other/es_2019';
+import './misc/other/promise_example';

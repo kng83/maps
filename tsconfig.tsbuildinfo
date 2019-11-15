@@ -149,13 +149,13 @@
         "version": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255",
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
-      "./src/misc/other/es_2019.ts": {
-        "version": "4dd452b23a14b88ac1ae3f08e78ccb69c59feecd6658087c29c3a5a7ed6cbe2b",
-        "signature": "051e49c4711b931479744448401fbe70c764899b713da76eaadfacd05aac65c0"
+      "./src/misc/other/promise_example.ts": {
+        "version": "67d2b101f5554b4edc5d88de8b5ec9f17f01829afc759544e691fdc553bcde5f",
+        "signature": "86ea242e7be23a244c83a68d34750cfe4fff0cd84394f21290ed60dc81e901ec"
       },
       "./src/index.ts": {
-        "version": "3f3824d898f81f3736c54b099fe40e628e3a88d783e4ce44d069b1193d313d0e",
-        "signature": "2b734f60a2f5542fe623d698fb74e6cdbc4140943f03a3e6774109bd1a5e3490"
+        "version": "7f3d5c0acb1c2e2476168e90d4338fd2f6dd149f11eb28ded8f6acdce41f1859",
+        "signature": "ce7890dcb3ac40537d8de98a6f46c7ee3c5b9cd0287854ca2c80734f131a7db6"
       },
       "./src/decorators/decorators.ts": {
         "version": "6e96dc3e76d86a09f1fc94b3510aa9a338582af7c14f42026b0ed67557e9f2fa",
@@ -189,6 +189,14 @@
         "version": "768a768118798784444ee34166ffc4176d3be5a9f86fc1244dade11f0ca41b83",
         "signature": "402e6bf0adbdc7f8c2463c4898aa3b4932db563bde4a202bc7c973b33fab482d"
       },
+      "./src/misc/other/call_example.ts": {
+        "version": "6207eca997ac268fe042c28421ca069cb4cb5a174c80a3edb4426bc5cd03f1c0",
+        "signature": "7454059155b33d25e69309de22010f4896594e1b36f299b97b54370dbdbf48dd"
+      },
+      "./src/misc/other/es_2019.ts": {
+        "version": "4dd452b23a14b88ac1ae3f08e78ccb69c59feecd6658087c29c3a5a7ed6cbe2b",
+        "signature": "051e49c4711b931479744448401fbe70c764899b713da76eaadfacd05aac65c0"
+      },
       "./src/misc/other/mixin_class.ts": {
         "version": "2297ab1477222dbec2e3787aa2a47f39d52557ea54a7f1e1cd1eb32f748a23cf",
         "signature": "0acc3092bd90ffe551678f94c2204a6d0649be29e283c548a9af780a157ac09e"
@@ -196,6 +204,10 @@
       "./src/misc/other/mixin_class_2.ts": {
         "version": "70cf8b8aafdbfdf22b80520a5ac01b331b33517e1db21d27f68b4912375ede20",
         "signature": "989358faaa125008a82d4c2db89b5be16fd08f9219e26b52ae4cb7c7f5109f06"
+      },
+      "./src/misc/other/partial.ts": {
+        "version": "0ee7e2059ce6066574954f9f1b271380420dce62d446bc43b33471ea2a41c03e",
+        "signature": "604b347720c3f723fd71b9b0da7006789606b892f8c79154747a7ca49ac39e08"
       },
       "./src/patterns/behavioral_patterns/chain_responsible_pattern.ts": {
         "version": "67ddfc9d28ac124cb430c2526a7bacea6438b10181b2bcc15d40e8fee334f5e8",
@@ -547,6 +559,7 @@
       "rootDir": "./src",
       "downlevelIteration": true,
       "strict": true,
+      "strictBindCallApply": true,
       "moduleResolution": 2,
       "esModuleInterop": true,
       "experimentalDecorators": true,
@@ -777,7 +790,7 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/misc/other/es_2019.ts": [
+      "./src/misc/other/promise_example.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -840,6 +853,18 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "./src/misc/other/call_example.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/misc/other/es_2019.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./src/misc/other/mixin_class.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -847,6 +872,12 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/misc/other/mixin_class_2.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/misc/other/partial.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -2201,8 +2232,11 @@
       "./src/misc/generators/generator_1.ts",
       "./src/misc/generators/generator_2.ts",
       "./src/misc/generators/generator_3.ts",
+      "./src/misc/other/call_example.ts",
+      "./src/misc/other/es_2019.ts",
       "./src/misc/other/mixin_class.ts",
       "./src/misc/other/mixin_class_2.ts",
+      "./src/misc/other/partial.ts",
       "./src/patterns/behavioral_patterns/chain_responsible_pattern.ts",
       "./src/patterns/behavioral_patterns/command_pattern.ts",
       "./src/patterns/behavioral_patterns/iterator_pattern.ts",
@@ -2287,7 +2321,7 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      "./src/misc/other/es_2019.ts"
+      "./src/misc/other/promise_example.ts"
     ]
   },
   "version": "3.7.2"
