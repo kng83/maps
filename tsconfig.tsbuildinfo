@@ -149,17 +149,21 @@
         "version": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255",
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
-      "./src/functional_programming/container.ts": {
-        "version": "a55900e026e21fa18dfc8031795ea02254fe1ba6ec4ca6ee84b1c400983e9e09",
-        "signature": "68fa2f8017a4f1e14eb9b6bcf5f5080efb98e773c0404d395252f97b89c2d0a2"
+      "./src/functional_programming/maybe.ts": {
+        "version": "d109f7fda83014b68c367065c4bd4603ceb25c38f377431ea90b0de9e7c93187",
+        "signature": "79b7fe527355674c90a0364ab7ed576f365bd079f3838cfa35379640b86e1e8c"
       },
       "./src/index.ts": {
-        "version": "81270a98fe97fbc87ef83c6bd632457892a672ece73070507b07d74334653ef9",
-        "signature": "b63b4df739e905a8aa4e40af3b5b90775fe1786727d589f59d86b1ef4ac7577a"
+        "version": "9b03307b2ec2e1aa6e596eddc2c461c54029c9b40bfb9da70c9066ae18ca8f09",
+        "signature": "9d7d9b6c723cafa0addbec334898d6f0689ff606245e35ee57e888b20d3680ce"
       },
       "./src/decorators/decorators.ts": {
         "version": "6e96dc3e76d86a09f1fc94b3510aa9a338582af7c14f42026b0ed67557e9f2fa",
         "signature": "01012a1d45b762773d7966ce715d0b041b66db3ed53f7ac12570e8eb3f6ed4ed"
+      },
+      "./src/functional_programming/container.ts": {
+        "version": "0845c42d21982fc8ea47f2693435b2b0b63260ba37ba41d289326a6f40b2c2c8",
+        "signature": "68fa2f8017a4f1e14eb9b6bcf5f5080efb98e773c0404d395252f97b89c2d0a2"
       },
       "./node_modules/reflect-metadata/index.d.ts": {
         "version": "8d6d51a5118d000ed3bfe6e1dd1335bebfff3fef23cd2af2f84a24d30f90cc90",
@@ -794,7 +798,7 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/functional_programming/container.ts": [
+      "./src/functional_programming/maybe.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -807,6 +811,12 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/decorators/decorators.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/functional_programming/container.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -2235,6 +2245,7 @@
       "./node_modules/typescript/lib/lib.esnext.bigint.d.ts",
       "./src/index.ts",
       "./src/decorators/decorators.ts",
+      "./src/functional_programming/container.ts",
       "./node_modules/reflect-metadata/index.d.ts",
       "./src/metadata/metadata.ts",
       "./src/metadata/metadata2.ts",
@@ -2332,7 +2343,7 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      "./src/functional_programming/container.ts"
+      "./src/functional_programming/maybe.ts"
     ]
   },
   "version": "3.7.2"
