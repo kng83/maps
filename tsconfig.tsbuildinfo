@@ -149,13 +149,13 @@
         "version": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255",
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
-      "./src/misc/other/promise_example.ts": {
-        "version": "67d2b101f5554b4edc5d88de8b5ec9f17f01829afc759544e691fdc553bcde5f",
-        "signature": "86ea242e7be23a244c83a68d34750cfe4fff0cd84394f21290ed60dc81e901ec"
+      "./src/functional_programming/container.ts": {
+        "version": "a55900e026e21fa18dfc8031795ea02254fe1ba6ec4ca6ee84b1c400983e9e09",
+        "signature": "68fa2f8017a4f1e14eb9b6bcf5f5080efb98e773c0404d395252f97b89c2d0a2"
       },
       "./src/index.ts": {
-        "version": "7f3d5c0acb1c2e2476168e90d4338fd2f6dd149f11eb28ded8f6acdce41f1859",
-        "signature": "ce7890dcb3ac40537d8de98a6f46c7ee3c5b9cd0287854ca2c80734f131a7db6"
+        "version": "81270a98fe97fbc87ef83c6bd632457892a672ece73070507b07d74334653ef9",
+        "signature": "b63b4df739e905a8aa4e40af3b5b90775fe1786727d589f59d86b1ef4ac7577a"
       },
       "./src/decorators/decorators.ts": {
         "version": "6e96dc3e76d86a09f1fc94b3510aa9a338582af7c14f42026b0ed67557e9f2fa",
@@ -208,6 +208,10 @@
       "./src/misc/other/partial.ts": {
         "version": "0ee7e2059ce6066574954f9f1b271380420dce62d446bc43b33471ea2a41c03e",
         "signature": "604b347720c3f723fd71b9b0da7006789606b892f8c79154747a7ca49ac39e08"
+      },
+      "./src/misc/other/promise_example.ts": {
+        "version": "67d2b101f5554b4edc5d88de8b5ec9f17f01829afc759544e691fdc553bcde5f",
+        "signature": "86ea242e7be23a244c83a68d34750cfe4fff0cd84394f21290ed60dc81e901ec"
       },
       "./src/patterns/behavioral_patterns/chain_responsible_pattern.ts": {
         "version": "67ddfc9d28ac124cb430c2526a7bacea6438b10181b2bcc15d40e8fee334f5e8",
@@ -790,7 +794,7 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/misc/other/promise_example.ts": [
+      "./src/functional_programming/container.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -878,6 +882,12 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/misc/other/partial.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/misc/other/promise_example.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -2237,6 +2247,7 @@
       "./src/misc/other/mixin_class.ts",
       "./src/misc/other/mixin_class_2.ts",
       "./src/misc/other/partial.ts",
+      "./src/misc/other/promise_example.ts",
       "./src/patterns/behavioral_patterns/chain_responsible_pattern.ts",
       "./src/patterns/behavioral_patterns/command_pattern.ts",
       "./src/patterns/behavioral_patterns/iterator_pattern.ts",
@@ -2321,7 +2332,7 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      "./src/misc/other/promise_example.ts"
+      "./src/functional_programming/container.ts"
     ]
   },
   "version": "3.7.2"
