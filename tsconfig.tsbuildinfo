@@ -149,13 +149,13 @@
         "version": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255",
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
-      "./src/functional_programming/either.ts": {
-        "version": "ca117e1b4e8e559392a2fe8f71cba104e5a7316b28e22999de8bad408ce77182",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      "./src/functional_programming/apply_functions.ts": {
+        "version": "03c54c4ee9f43615d862da1ea2256f363cf5b0f48cb694304a0d5cf84e7ffe16",
+        "signature": "44b03d39e69ee2cad4d961b12e1a1c07c0ed56de9884ee56eb2a2397860aae3f"
       },
       "./src/index.ts": {
-        "version": "856351671889ee75fb90694f42517759929972fc3f685e2be96b7070ddec7a3b",
-        "signature": "6203b33a81d7f40e958a8288ace41e4c64502e8b451d9ea9ef4a998cabbb67dc"
+        "version": "2c0a2ec0b5a0e8d35239c3d9b2c06cfea8f26de1d5bca3025850f053565c7128",
+        "signature": "18cf1dd831b7bbd072f96467685779a3055ba9b001403867ab9444f6bfc945c9"
       },
       "./src/decorators/decorators.ts": {
         "version": "6e96dc3e76d86a09f1fc94b3510aa9a338582af7c14f42026b0ed67557e9f2fa",
@@ -165,9 +165,17 @@
         "version": "0845c42d21982fc8ea47f2693435b2b0b63260ba37ba41d289326a6f40b2c2c8",
         "signature": "68fa2f8017a4f1e14eb9b6bcf5f5080efb98e773c0404d395252f97b89c2d0a2"
       },
+      "./src/functional_programming/either.ts": {
+        "version": "ca117e1b4e8e559392a2fe8f71cba104e5a7316b28e22999de8bad408ce77182",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
       "./src/functional_programming/maybe.ts": {
         "version": "b2496a2f444a74dba58300db85bae2ef6672dc0def9f3f1534f7d541c8c58287",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
+      "./src/functional_programming/monad.ts": {
+        "version": "cfd6991309f901ac1a0890b43dc855f9cb211572e52b502241a67af17061d307",
+        "signature": "ad0f05b5f3a4baa7775ca64c3a46463fbf9bb41be470b0b8e97b11ff045babf4"
       },
       "./node_modules/reflect-metadata/index.d.ts": {
         "version": "8d6d51a5118d000ed3bfe6e1dd1335bebfff3fef23cd2af2f84a24d30f90cc90",
@@ -802,14 +810,13 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/functional_programming/either.ts": [
-        "./node_modules/@types/node/util.d.ts",
+      "./src/functional_programming/apply_functions.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/index.ts": [
-        "./src/functional_programming/either.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -827,10 +834,22 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "./src/functional_programming/either.ts": [
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./src/functional_programming/maybe.ts": [
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/functional_programming/monad.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./node_modules/reflect-metadata/index.d.ts": [
@@ -2257,7 +2276,9 @@
       "./src/index.ts",
       "./src/decorators/decorators.ts",
       "./src/functional_programming/container.ts",
+      "./src/functional_programming/either.ts",
       "./src/functional_programming/maybe.ts",
+      "./src/functional_programming/monad.ts",
       "./node_modules/reflect-metadata/index.d.ts",
       "./src/metadata/metadata.ts",
       "./src/metadata/metadata2.ts",
@@ -2355,7 +2376,40 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      "./src/functional_programming/either.ts"
+      [
+        "./src/functional_programming/apply_functions.ts",
+        [
+          {
+            "file": "./src/functional_programming/apply_functions.ts",
+            "start": 1334,
+            "length": 7,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '(textOne: string) => (textTwo: string) => string' is not assignable to parameter of type '(value: string) => string'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type '(textTwo: string) => string' is not assignable to type 'string'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/functional_programming/apply_functions.ts",
+                "start": 1334,
+                "length": 7,
+                "messageText": "Did you mean to call this expression?",
+                "category": 3,
+                "code": 6212
+              }
+            ]
+          }
+        ]
+      ]
     ]
   },
   "version": "3.7.2"
