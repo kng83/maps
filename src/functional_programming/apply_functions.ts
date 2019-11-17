@@ -14,12 +14,12 @@ namespace ApplyFunctions_1 {
             return new Container(x);
         }
 
-        map(callbackfn: (value: T) =>T): Exclude<Container<T>,'ap'> | Pick<Container<T>,'ap'> {
+        map(callbackfn: (value: T) => T): Omit<Container<T>,'ap'> | Pick<Container<T>,'ap'> {
             let functionResponse = callbackfn(this.$value);
             if(typeof functionResponse === 'function'){
                 return Container.of(functionResponse) as Pick<Container<T>,'ap'>
             } else{
-                return  Container.of(functionResponse) as Exclude<Container<T>,'ap'>
+                return  Container.of(functionResponse) as Omit<Container<T>,'ap'>
             }
            
         }
@@ -38,7 +38,7 @@ namespace ApplyFunctions_1 {
     const addText3 = (text:string) => text.toUpperCase();
 
     // poniewaz funkcja ma add 3 stopniowe to wywolywany jest app 3 razy
-    let me = Container.of("some tekes").map(addText).ap(Container.of('sss'));
+    let me = Container.of("some tekes").map(addText3);
     console.log(addText3('bobo'));
     console.log(me);
 
