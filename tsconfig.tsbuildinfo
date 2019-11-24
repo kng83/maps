@@ -150,7 +150,7 @@
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
       "./src/functional_programming/apply_functions.ts": {
-        "version": "03c54c4ee9f43615d862da1ea2256f363cf5b0f48cb694304a0d5cf84e7ffe16",
+        "version": "5f18569fbb5d3fd4aac30357476c35c50b514888b969e27718ec666edb08c3b3",
         "signature": "44b03d39e69ee2cad4d961b12e1a1c07c0ed56de9884ee56eb2a2397860aae3f"
       },
       "./src/index.ts": {
@@ -2376,40 +2376,7 @@
       "./src/patterns/structural_patterns/proxy_pattern.ts",
       "./node_modules/@types/faker/index.d.ts",
       "./node_modules/@types/googlemaps/index.d.ts",
-      [
-        "./src/functional_programming/apply_functions.ts",
-        [
-          {
-            "file": "./src/functional_programming/apply_functions.ts",
-            "start": 1334,
-            "length": 7,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type '(textOne: string) => (textTwo: string) => string' is not assignable to parameter of type '(value: string) => string'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type '(textTwo: string) => string' is not assignable to type 'string'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            },
-            "relatedInformation": [
-              {
-                "file": "./src/functional_programming/apply_functions.ts",
-                "start": 1334,
-                "length": 7,
-                "messageText": "Did you mean to call this expression?",
-                "category": 3,
-                "code": 6212
-              }
-            ]
-          }
-        ]
-      ]
+      "./src/functional_programming/apply_functions.ts"
     ]
   },
   "version": "3.7.2"
